@@ -90,6 +90,3 @@ Where `--env` argument is the target environment, e.g. `yarn deploy --env=prod`.
 - `yarn upgrade-interactive` — Update Node.js modules (dependencies)
 - `yarn pnpify --sdk vscode` — Update TypeScript, ESLint, and Prettier settings in VSCode
 
-
-## License
-[LICENSE](https://github.com/kriasoft/react-starter-kit/blob/main/LICENSE) file.
