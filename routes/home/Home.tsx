@@ -182,14 +182,10 @@ export default function Home(props: Props): JSX.Element {
           <ForceGraph2D graphData={myData} nodeAutoColorBy="selected"
     nodeCanvasObject={(node, ctx, globalScale) => {
             const label = node.id;
-            const fontSize = 22/globalScale;
+            const fontSize = 20/globalScale;
             ctx.font = `${fontSize}px Sans-Serif`;
             const textWidth = ctx.measureText(label).width;
             const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
-
-
-
-
             ctx.textAlign = 'top';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = node.color;
