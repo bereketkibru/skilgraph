@@ -3,6 +3,7 @@
 
 import { Box, Button, Container, Typography } from "@material-ui/core";
 import { Api, GitHub } from "@material-ui/icons";
+import ForceGraph2D from 'react-force-graph-2d';
 import * as React from "react";
 import { config } from "../../core";
 import { useLoginDialog, useNavigate } from "../../hooks";
@@ -22,12 +23,11 @@ export default function Home(props: Props): JSX.Element {
     <Box>
       <Container sx={{ py: "20vh" }} maxWidth="sm">
         <Typography sx={{ mb: 2 }} variant="h1" align="center">
-          Welcome to React Starter Kit!
+        Python
+General-purpose Programming Language
         </Typography>
-
         <Typography sx={{ mb: 4 }} variant="h3" align="center">
-          The web's most popular front-end template for building web
-          applications with React, Relay, and GraphQL.
+        General-purpose Programming Language
         </Typography>
 
         <Box
