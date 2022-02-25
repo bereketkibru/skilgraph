@@ -174,7 +174,7 @@ export default function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h2" className={classes.title}>
-            {selected.id.toUpperCase()} Skill Cluster DNA
+            {selected.id} Skill Cluster DNA
           </Typography>
           <Skills selected={selected} setSelected={setSelected} />
         </Toolbar>
