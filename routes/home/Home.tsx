@@ -1,10 +1,10 @@
 /* SPDX-FileCopyrightText: 2014-present Kriasoft <hello@kriasoft.com> */
 /* SPDX-License-Identifier: MIT */
 
-import { Box, Container, Typography } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import * as React from "react";
 import { useLoginDialog, useNavigate } from "../../hooks";
-import Graph from "./components/graph";
+import App from "./components/app";
 import type { homeQueryResponse as Props } from "./__generated__/homeQuery.graphql";
 
 export default function Home(props: Props): JSX.Element {
@@ -19,15 +19,7 @@ export default function Home(props: Props): JSX.Element {
 
   return (
     <Box>
-      <Container>
-        <Typography sx={{ mb: 2 }} variant="h1" align="center">
-          Python Skill Cluster DNA
-        </Typography>
-        <Typography sx={{ mb: 4 }} variant="h3" align="center">
-          General-purpose Programming Language
-        </Typography>
-        <Graph />
-      </Container>
+      <App></App>
     </Box>
   );
 }

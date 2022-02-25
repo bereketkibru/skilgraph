@@ -11,7 +11,6 @@ import type { RouteResponse } from "../core/router";
 import { resolveRoute } from "../core/router";
 import { LoginDialog } from "../dialogs";
 import theme from "../theme";
-import { AppToolbar } from "./AppToolbar";
 import { ErrorPage } from "./ErrorPage";
 
 type AppProps = {
@@ -92,7 +91,7 @@ export class App extends React.Component<AppProps> {
           <HistoryContext.Provider value={history}>
             <LocationContext.Provider value={location}>
               <CssBaseline />
-              <AppToolbar onChangeTheme={this.handleChangeTheme} />
+
               <Toolbar />
               {route?.component
                 ? React.createElement(route.component, route.props)
