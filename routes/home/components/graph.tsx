@@ -27,6 +27,7 @@ export default function Graph({ data }) {
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <ForceGraph2D
                   graphData={data}
+                  nodeLabel={"title"}
                   nodeAutoColorBy="selected"
                   width={500}
                   height={500}

@@ -120,6 +120,7 @@ module.exports = function config(env, options) {
       rules: [
         {
           oneOf: [
+            // { test: /\.json$/, loader: 'json-loader' },
             {
               test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
               loader: require.resolve("url-loader"),
